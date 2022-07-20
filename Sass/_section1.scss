@@ -1,0 +1,120 @@
+.hero {
+  padding-bottom: 100px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 40px;
+    position: relative;
+  }
+  &-content {
+    width: 100%;
+    max-width: 555px;
+    margin-top: 81px;
+    position: relative;
+    h1 {
+      color: $black-color;
+      max-width: 356px;
+      font-weight: 700;
+      font-family: $font-heading;
+      font-size: 64px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 74px;
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: $primary-font;
+      color: $black-color;
+      font-style: normal;
+      display: inline-block;
+      position: relative;
+    }
+    h3::after {
+      content: "";
+      position: absolute;
+      background-color: $black-color;
+      left: 0;
+      right: 0;
+      bottom: -21px;
+      width: 32px;
+      height: 2px;
+    }
+  }
+  &-content::before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    top: 300px;
+    border-radius: 50px;
+    padding: 3px;
+    width: 26px;
+    height: 26px;
+    background: linear-gradient(156.14deg, #bff0dd 12.18%, #57d2a3 87.99%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  &-content::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(156.14deg, #bff0dd 12.18%, #57d2a3 87.99%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  &-image {
+    min-width: 687px;
+    margin-top: 72px;
+  }
+}
+.select {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+  margin-top: 69px;
+  &-item {
+    select,
+    input[type="date"] {
+      min-height: 52px;
+      max-width: 220px;
+      width: 100%;
+      border: 0.8px solid #afb0b9;
+      box-sizing: border-box;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 400px;
+      font-family: $primary-font;
+      padding-left: 31px;
+      option {
+        font-size: 18px;
+        transform: translateX(12px);
+      }
+    }
+  }
+}
+.button {
+  width: 180px;
+  height: 52px;
+  background-color: $orange-color;
+  position: relative;
+  border-radius: 8px;
+  margin-top: 51px;
+  a {
+    font-size: 17px;
+    font-weight: $foodter-font;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+}

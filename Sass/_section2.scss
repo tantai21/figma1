@@ -1,0 +1,23 @@
+.hero2 {
+  padding-bottom: 100px;
+  .hero-content {
+    h2 {
+      max-width: 481px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 50px;
+      color: $black-color;
+    }
+    p {
+      font-weight: 300;
+      font-size: 17px;
+      font-style: normal;
+      line-height: 30px;
+      color: #7d7987;
+    }
+  }
+  .hero-image {
+    width: 659px;
+    height: 534px;
+  }
+}

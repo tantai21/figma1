@@ -1,0 +1,55 @@
+.hero6 {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  display: inline-block;
+  margin-top: 270px;
+  margin-bottom: 196px;
+  a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: $orange-color;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  .flex {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+    .box {
+      max-width: 261px;
+      img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        object-position: center top;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        color: #7d7987;
+        margin-bottom: 23px;
+        margin-top: 13px;
+      }
+      h3 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 30px;
+      }
+    }
+  }
+}
